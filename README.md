@@ -28,7 +28,7 @@ All of the code is organized into folders.
 
 The code will look like the following:
 ```
-@http.route('/my_library/books/json', type='json', auth='none')
+@http.route('/my_library/books/json', type='json', auth='none') 
 def books_json(self):
 records = request.env['library.book'].sudo().search([]) return 
 records.read(['name'])
